@@ -13,6 +13,16 @@ kubectl run --rm -it --image synadia/nats-box nats-test
 nsc add operator -u ./stage_eu20/operator.jwt  --force
 ```
 
+
+## check account jwt remote
+```
+nats request "\$SYS.REQ.ACCOUNT.$ACCOUNT_ID.CLAIMS.LOOKUP" "" --creds 
+```
+## list all accounts remote
+```
+nats request "\$SYS.REQ.CLAIMS.LIST" "" --creds 
+```
+
 ### others
 ```
 nsc list accounts
