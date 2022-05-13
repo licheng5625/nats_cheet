@@ -25,7 +25,7 @@ nats request "\$SYS.REQ.CLAIMS.LIST" "" --creds
 
 ## nats connect to jetstream
 ```
-nats consumer next 9c73d047-bab3-4d31-9197-67ca2fa0e235 resampled_moaa-6007983E9FB3415390C3CA796AB26900-65FBC58D1DE447AB9FD41DCB71399A24-847D2247C80B476986B4E509AB4159C6 --creds dts.eu20.stage.cred --js-api-prefix=NEWTON.API --trace
+nats consumer next 9c73d047-bab3-4d31-9197-67ca2fa0e235 resampled_moaa-6007983E9FB3415390C3CA796AB26900-65FBC58D1DE447AB9FD41DCB71399A24-847D2247C80B476986B4E509AB4159C6  --js-api-prefix=NEWTON.API --trace --creds  
 ```
 
 
